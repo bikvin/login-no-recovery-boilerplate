@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { nunitoSans, cormorantGaramond } from "@/app/fonts";
+import { playfairDisplay, libreBaskerville } from "@/app/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ландшафтный дизайнер Марина Шестакова",
-  description: "Ландшафтный дизайнер Марина Шестакова",
+  title: "Boilerplate. Login. No password recovery.",
+  description: "Boilerplate. Login. No password recovery.",
 };
 
 export default function RootLayout({
@@ -13,12 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className="scroll-smooth">
-      <body
-        className={`${nunitoSans.className} ${cormorantGaramond.className} font-nunito bg-bodybackground overflow-x-hidden`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`scroll-smooth ${playfairDisplay.variable} ${libreBaskerville.variable}`}
+    >
+      <body className={`font-baskerville overflow-x-hidden`}>{children}</body>
     </html>
   );
 }

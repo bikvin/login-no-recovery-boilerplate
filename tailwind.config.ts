@@ -13,9 +13,8 @@ const config: Config = {
         maingreen: "#57722C",
       },
       fontFamily: {
-        // Adding Nunito Sans and Cormorant Garamond to the Tailwind config
-        nunito: ['"Nunito Sans"', "sans-serif"],
-        cormorant: ['"Cormorant Garamond"', "serif"],
+        playfair: ["var(--font-playfair)", "serif"],
+        baskerville: ["var(--font-baskerville)", "serif"],
       },
     },
   },
